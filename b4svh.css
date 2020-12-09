@@ -1,0 +1,390 @@
+/* CSS stylesheet for the six villages hyperfast website */
+
+body {
+	/* Set the general style for the whole web page */
+	font-family: "Century Gothic", Verdana, sans-serif;
+    font-size: 12pt;
+    color: #000;
+    background-color:#fff;
+}
+
+/* The element with id="wrapper" */
+#wrapper {
+	/* Sets the width of the element that contains all the other page elements */
+	max-width:100%;
+	/* Centers the content */ 
+    margin: auto; 
+	border-style: none;
+	border-width: 1px;
+	border-color: 000;
+}
+
+/* The element with id="pageHeader" */
+header {
+	display: grid;
+    /* Split the element with id="pageHeader" into 2 columns - 1 for the logo and 1 for the title text */
+    grid-template-columns: 1fr 2fr 1fr;
+	
+	border-style: none;
+	border-width: 3px;
+	border-color: fff;
+}
+
+.images {
+	width: 100%;
+	position: center;
+}
+
+/*Format the images in the title bar */
+.titleimages {
+	width: 100%;
+	position: center;
+	height: 100%;
+}
+
+/* Format the page heading */
+h1, h2, h3, h4 {
+	width: 100%;
+	text-align:center;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 2.6em;
+	text-transform: uppercase;
+	color: #000088;
+	margin: 0.1em;
+}
+
+h2 {
+	text-transform: none;
+	font-size: 1.4em;
+	text-align: left;	
+}
+
+h3 {
+	text-transform: none;
+	font-size: 1.3em;
+}
+
+h4 {
+	text-transform: none;
+	font-size: 1.2em;
+}
+
+a {
+    color: #0000dd;
+}
+
+p, li, label {
+	font-family: Verdana, sans-serif;
+}
+
+.subheading {
+	font-weight: bold;
+}
+
+#menu {
+	display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 2.2em;
+    grid-row-gap: 0.3em;
+    font-size: 1.3em;
+	font-weight: bold;
+	text-align: left;
+    
+}
+
+#menu a:hover {
+	/* Set a darker background when the mouse is over the nav bar element */
+	color:#8888aa;
+}
+
+/* Set the active colour for the menu */
+#menu a.active {
+    color: #8888aa;
+    text-decoration: none;
+
+}
+
+#menuTitle {
+    padding-bottom: 10px;
+}
+
+/* The section with id="navigation" */
+#navigation {
+	/* Set the background colour to that of the page logo. This is the colour used to highlight the most important page elements */
+    background-color: #e8e8e8;
+    border-style: none;
+    border-width: 1px;
+    border-color: #000;
+	/* Use css grid to divide the element into 6 equal columns */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+	text-transform: uppercase;
+}
+
+/* An <a> element inside the element with id="navigation" */
+#navigation a {
+	/* Set the style of the text in the nav bar */
+    font-weight: bold;
+	font-size: 14pt;
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    margin: 0px;
+    border-style: solid;
+    border-width: 2px;
+	/* Paler shade of the logo colour used to show the edges of the navigation "buttons" */
+    border-color: #fff;
+}
+
+/* Definition of the pseudo class :hover of the element <a> inside the element with id="navigation" */
+#navigation a:hover {
+	/* Set a darker background when the mouse is over the nav bar element */
+    background-color: #7fa88b;
+	color:#fff;
+}
+
+/* Sets the colour of the current menu item*/
+#navigation a.active {
+    background-color: #8b0000;
+    color: #fff;
+}
+
+#hamburger label {
+	font-size: 3em;
+	font-weight: bold;
+	/* Changes the pointer to a hand icon indicating that it is over a link */
+	cursor: pointer;
+	align:center;
+}
+
+label {
+	align:center;
+}
+
+#hamburger {
+	/* Hide the element that has class="hamburger" */
+	display: none;
+}
+/* Element <input> inside the element with id="toggle" */
+input#toggle {
+	/* Hides the checkbox */
+	display: none;
+}
+
+#content {
+	padding:10px;
+	display:grid;
+	grid-template-columns:4fr 1fr;
+	grid-gap:2em;
+}
+
+#maingrid {
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr;
+	grid-gap:2em;
+}
+#maingrid2 {
+	display:grid;
+	grid-template-columns:1fr 3fr;
+	grid-gap:2em;
+}
+
+#sidebar {
+	background-color: #1ff681;
+}
+
+#newsletters, #apply, #socialmedia {
+	margin: 10px;
+}
+form {
+	margin: 10px;
+}
+input {
+	width: 80%;
+	height: 2em;
+}
+#apply {
+	padding-top:10px;
+}
+
+#apply a {
+    background-color:#00a;
+	font-size:1.3em;
+	font-weight:bold;
+	color:#fff;
+	padding:15px;
+	text-decoration:none;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+#apply a:hover {
+    background-color: #f00;
+}
+
+
+#mail {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.3em;
+
+}
+
+#icons {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+#icons > img {
+    margin: 0.1em;
+    width: 80%;
+}
+
+#socialmedia {
+    margin-top: 20px;
+}
+
+#hastag {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+hr {
+    margin-top: 20px;
+    display: block;
+    border: 1px solid black;
+    color: #000;
+    width: 70%;
+}
+
+.newsitem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border:5px;
+    grid-gap: 5px;
+    justify-items: center;
+}
+
+.newspic {
+    width: 90%;
+    height: auto;
+}
+
+.letters {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    grid-row-gap: 2em;
+    text-align: left;
+}
+
+
+/* Adjust layout for smaller screens */
+@media screen and (max-width: 1200px){
+	#maingrid {
+		grid-template-columns:1fr 1fr;
+	}
+    #menu {
+        font-size: 0.8em;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    .titleimages {
+        width: 70%;
+        justify-items: center;
+    }
+    #maingrid2 {
+        grid-template-columns: 1fr 2fr;
+    }
+    
+    #menu {
+        font-size: 0.8em;
+    }
+    
+    .newsitem {
+        grid-template-columns: 1fr;
+    }
+    
+    header {
+		grid-template-columns: 1fr;
+	}
+	
+	.wide {
+		display:none;
+	}
+	#navigation {
+		display:none;
+		grid-template-columns: 1fr;
+	}
+		/* The element with id="hamburger" */
+	#hamburger {
+		/* Display the hamburger icon */
+		display: block;
+	}
+
+	/* An <input> element in the element with id="hamburger" */
+	#hamburger input {
+		/* Hide the checkbox */	
+		display: none;
+	}
+		/* When the <input> element in the element with id="toggle" is checked set the style of the element with id="navigation" that is a child of the <input> element */
+	input#toggle:checked ~ #navigation { 
+		/* If the checkbox is checked then display the main navigation menu in a single column */
+		display: grid;
+		grid-template-columns: 1fr;
+		}
+	h1 {
+		font-size:2em;
+	}
+	h3 {
+		font-size:0.8em;
+	}
+	#content {
+		grid-template-columns:2fr 1fr;
+	}
+	#maingrid {
+	grid-template-columns: 1fr;
+	}
+}
+
+@media screen and (max-width: 600px){
+    #menu {
+        font-size: 1.3em;
+        text-align: center;
+    }
+    
+    #maingrid2 {
+        grid-template-columns: 1fr;
+    }
+    
+    h1 {
+		font-size:1em;
+	}
+	h3 {
+		font-size:0.8em;
+	}
+
+	#hamburger label {
+		font-size: 2em;
+	}
+	#content {
+		grid-template-columns:1fr;
+	}
+	#maingrid {
+	grid-template-columns:1fr;
+	}
+	.description {
+		display: none;
+	}
+
+}
